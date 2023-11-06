@@ -1,9 +1,11 @@
-#main.py
+# main.py
 import plugins
 
 def main():
 	# Load Plugins
 	plugin_ld = plugins.PluginLoader('plugins_fd')
+	a = plugin_ld.imported_plugins[0].TestA()
+	print(a.Test)
 
 	# Search and load info
 
